@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.cuerpo-principal {
+  background: #161616;
+  color: white;
+}
+
+.cuerpo-principal-menu {
+  background: #161616;
+  color: white;
+}
+
+/*CAMBIOS EN DUDA DE IMPLEMENTACION ---->*/
+/*<---- CAMBIOS EN DUDA DE IMPLEMENTACION*/
+
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.titulo_header {
+  margin: 0; /* Elimina el margen superior del título */
+  margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
+}
+
+.icon-menu {
+  font-size: 24px; /* Ajusta el tamaño del ícono según tus necesidades */
+}
+
+/*Menù lateral*/
+#btn-menu {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  flex-grow: 1; /* Hace que el logo ocupe el espacio restante */
+}
+
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #393c3c;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+
+.cont-menu nav {
+  transform: translateY(15%);
+}
+
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f;
+}
+
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}

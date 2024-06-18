@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="chat-style.css">
+  <link href="css/menu-styles.css" rel="stylesheet" type="text/css">
+  <link href="css/fontello.css" rel="stylesheet" type="text/css">
+  
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Menú -->
+  <section class="cuerpo-principal-menu">
+    <header class="cabecera">
+      <div class="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+      </div>
+    </header>
+
+
+  </section>
+
+  <!-- Chat -->
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        <i class="fas fa-comment-alt"></i> ASISTENTE
+      </div>
+      <div class="msger-header-options">
+        <span><i class="fas fa-cog"></i></span>
+      </div>
+    </header>
+
+    <main class="msger-chat">
+      <div class="msg left-msg">
+        <div class="msg-img"></div>
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">DatBass</div>
+            <div class="msg-info-time" id="current-time">--:--</div>
+          </div>
+
+          <div class="msg-text"x>
+            Hola, ¡bienvenido a este chat! ¿En qué puedo ayudarte? 
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="msger-inputarea">
+      <input type="text" class="msger-input" placeholder="Escribe un mensaje">
+      <button type="submit" class="msger-send-btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
+  <script src="chat-script-prueba.js"></script>
+
+</body>
+
+</html>
